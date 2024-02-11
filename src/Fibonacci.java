@@ -2,7 +2,8 @@
 public class Fibonacci {
     private Fibonacci() {
     }
-
+//Просторова складність: O(1) - стала
+//Часова складність: O(n) - лінійна
     public static int iterativeFibonacci(int n) {
         if (n <= 1) {
             return n;
@@ -19,7 +20,8 @@ public class Fibonacci {
 
         return fib;
     }
-
+//Просторова складність: O(n) - глибина викликів рекурсії, залежить від n.
+//Часова складність: O(2^n) - експоненційна.
     public static int recursiveFibonacci(int n) {
         if (n <= 1) {
             return n;
@@ -28,7 +30,8 @@ public class Fibonacci {
     }
 
 
-
+//Просторова складність: O(n) - кількість збережених проміжних результатів, залежить від n.
+//Часова складність: O(n) - лінійна, 
     public static int dynamicProgrammingFibonacci(int n) {
         if (n <= 1) {
             return n;
